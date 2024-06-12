@@ -1,31 +1,44 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title> Dynamic Landing Page </title>
+
     <style>
-        body, html {
+        body, html 
+        {
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
             text-align: center;
             color: #333;
         }
-        .header {
+
+        .header 
+        {
             background: url('./Assets/RurqKDM.jpeg') no-repeat center center/cover;;
             color: white;
             padding: 100px 0;
             position: relative;
         }
-        .header h1 {
+
+        .header h1 
+        {
             font-size: 2.5em;
             margin: 0;
         }
-        .header p {
+        
+        .header p 
+        {
             font-size: 1.2em;
             margin: 10px 0 20px;
         }
-        .header .btn {
+        
+        .header .btn 
+        {
             background: blue;
             color: white;
             padding: 10px 20px;
@@ -35,53 +48,63 @@
             font-size: 1em;
             transition: background 0.3s ease;
         }
-        .header .btn:hover {
+        
+        .header .btn:hover 
+        {
             background: darkblue;
         }
+
         .features {
             display: flex;
             justify-content: center;
-            padding: 100px 0;
+            padding: 36px 0;
             background: #f0f0f0;
         }
-        .feature {
+        
+        .feature 
+        {
             background: white;
             padding: 20px;
             margin: 0 10px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
-            cursor: pointer;
         }
-        .feature:hover {
+        
+        .feature:hover 
+        {
             transform: translateY(-10px);
             box-shadow: 0 15px 30px rgba(0,0,0,0.1);
         }
-        .footer {
+        
+        .footer 
+        {
             background: #333;
             color: white;
             padding: 20px 0;
             position: relative;
         }
     </style>
+
 </head>
+
 
 <body>
     <div class="header">
-        <h1>Welcome to Our Service</h1>
-        <p>Discover the future of online experience.</p>
-        <button class="btn" onclick="showAlert()">Learn More</button>
+        <h1> Welcome to Our Service </h1>
+        <p> Discover the future of online experience. </p>
+        <button class="btn" onclick="showAlert()"> Learn More </button>
     </div>
 
     <div class="features">  
         <div class="feature" onclick="showAlert()">
-            <h2>Feature One</h2>
-            <p>Description of Feature One.</p>
+            <h2> Feature One </h2>
+            <p> Description of Feature One. </p>
         </div>
   
         <div class="feature" onclick="showAlert()">
-            <h2>Feature Two</h2>
-            <p>Description of Feature Two.</p>
+            <h2> Feature Two </h2>
+            <p> Description of Feature Two. </p>
         </div>
     </div>
 
@@ -96,5 +119,7 @@
             alert("Page is not available!");
         }
     </script>
+
 </body>
+
 </html>
