@@ -205,13 +205,13 @@ nav ul li a {
   color: #333;
 }
 
-@media (max-width: 913px), (max-width: 744px), (max-width: 360px) {
+@media (max-width: 1250px) and (min-width: 550px) {
   nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 333px;
-    margin: 5px 160px 5px 80px;
+    gap: 0;
+    margin: 5px 40px 5px 80px;
   }
 
   .nav-1st-part img {
@@ -240,10 +240,7 @@ nav ul li a {
   .top-text h1 {
     font-size: 50px;
     line-height: 50px;
-  }
-
-  .top-text p {
-    width: 110%;
+    width: 70%;
   }
 
   .buttonsCostandExp {
@@ -269,29 +266,27 @@ nav ul li a {
   }
 }
 
-@media (max-width: 744px) {
-  nav {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 5px 140px 5px 70px;
-    gap: 175px;
-  }
-
+@media (max-width: 768px) and (min-width: 200px) {
   .services {
-    display: inline-flex;
     text-align: center;
     margin: 0 100px;
   }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 580px) and (min-width: 200px) {
+  body {
+    width: fit-content;
+  }
+
   nav {
     gap: 0px;
     margin: 7px 10px 7px 50px;
+    justify-content: space-evenly;
   }
 
-  nav ul {
+  nav ul li a,
+  .support-icon,
+  .cart-icon {
     display: none;
   }
 
@@ -299,20 +294,18 @@ nav ul li a {
     gap: 16px;
   }
 
+  .search input {
+    width: 120px;
+  }
+
   .top {
     padding: 200px 0 30px 30px;
   }
 
   .top-text h1 {
-    font-size: 40px;
-  }
-
-  .top-text h1 {
     width: 100%;
-  }
-
-  .top-text p {
-    width: 110%;
+    font-size: 50px;
+    line-height: 50px;
   }
 
   .cta-button,
@@ -325,7 +318,7 @@ nav ul li a {
     border-radius: 30px;
     cursor: pointer;
     font-family: Inter;
-    font-size: 11px;
+    font-size: 12px;
     font-weight: 700;
     color: white;
   }
@@ -333,22 +326,25 @@ nav ul li a {
   .cta-button {
     padding: 13px;
   }
-
-  .services {
-    display: flex;
-    margin: 0;
-    padding: 30px;
+  .service {
+    margin: 15px 0;
   }
-
   .service img {
-    width: 50px;
-    height: 50px;
-    margin: 0;
+    width: 70px;
+    height: 70px;
+    margin: 40px 40px 0 0;
     padding: 0;
   }
 
   .service p {
-    margin-top: 7px;
-    margin-right: 10px;
+    margin: 0 22px 0 0;
+  }
+}
+
+@media (max-width: 580px) and (min-width: 570px) {
+  .top-text h1 {
+    font-size: 50px;
+    line-height: 50px;
+    width: 70%;
   }
 }
