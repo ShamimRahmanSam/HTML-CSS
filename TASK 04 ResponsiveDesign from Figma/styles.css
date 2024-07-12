@@ -14,7 +14,7 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  gap: 150px;
+  gap: 200px;
 }
 
 .nav-1st-part,
@@ -24,8 +24,12 @@ nav {
   justify-content: center;
 }
 
-.nav-1st-part img {
-  margin-right: 45px;
+.burger {
+  font-size: 20px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
 }
 
 nav ul {
@@ -211,14 +215,10 @@ nav ul li a {
     justify-content: space-between;
     align-items: center;
     gap: 0;
-    margin: 5px 40px 5px 80px;
+    margin: 5px 40px;
   }
 
-  .nav-1st-part img {
-    margin-top: 3px;
-  }
-
-  nav ul li a,
+  nav ul li,
   .support-icon,
   .cart-icon {
     display: none;
@@ -279,17 +279,18 @@ nav ul li a {
   }
 
   nav {
-    gap: 0px;
-    margin: 7px 10px 7px 50px;
-    justify-content: space-evenly;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin: 5px 15px;
   }
 
-  nav ul li a,
+  nav ul li,
   .support-icon,
   .cart-icon {
     display: none;
   }
-
   .nav-2nd-part {
     gap: 16px;
   }
@@ -326,9 +327,11 @@ nav ul li a {
   .cta-button {
     padding: 13px;
   }
+
   .service {
     margin: 15px 0;
   }
+
   .service img {
     width: 70px;
     height: 70px;
@@ -346,5 +349,32 @@ nav ul li a {
     font-size: 50px;
     line-height: 50px;
     width: 70%;
+  }
+}
+
+@media (min-width: 200px) {
+  .nav-1st-part img {
+    margin-top: 7px;
+  }
+}
+
+@media (max-width: 580px) and (min-width: 200px) {
+  .services {
+    text-align: center;
+    margin: 0 70px;
+  }
+
+  .buttonsCostandExp {
+    gap: 20px;
+  }
+}
+
+@media (min-width: 1250px) {
+  .burger {
+    display: none;
+  }
+
+  .nav-1st-part img {
+    margin-right: 45px;
   }
 }
