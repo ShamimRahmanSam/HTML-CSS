@@ -1,6 +1,5 @@
 body {
   margin: 0;
-  padding: 0;
   font-family: Inter;
   background-color: #ffffff;
 }
@@ -13,15 +12,7 @@ header {
 nav {
   display: flex;
   justify-content: space-around;
-  align-items: center;
   gap: 200px;
-}
-
-.nav-1st-part,
-.nav-2nd-part {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .burger {
@@ -29,7 +20,7 @@ nav {
   background: none;
   border: none;
   color: white;
-  cursor: pointer;
+  margin-bottom: 5px;
 }
 
 nav ul {
@@ -55,8 +46,6 @@ nav ul li a {
 }
 
 .search {
-  display: flex;
-  align-items: center;
   position: relative;
 }
 
@@ -66,7 +55,6 @@ nav ul li a {
   background: #202e70;
   padding: 10px 0px 10px 40px;
   font-size: 16px;
-  font-weight: 500;
   width: 200px;
 }
 
@@ -81,22 +69,28 @@ nav ul li a {
   transform: translateY(-50%);
 }
 
+.nav-1st-part,
+.nav-2nd-part,
+.search,
 .supportCartPeople,
 .support-icon,
 .cart-icon,
 .people-icon {
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 
 .supportCartPeople {
   gap: 16px;
 }
 
+.burger,
 .support-icon,
 .cart-icon,
-.people-icon {
+.people-icon,
+.cta-button,
+.experience-button,
+.service {
   cursor: pointer;
 }
 
@@ -105,33 +99,21 @@ nav ul li a {
 }
 
 .top {
-  display: flex;
-  align-items: center;
   color: white;
   background: url("/TASK 04 ResponsiveDesign from Figma/assets/Satellite.png")
     no-repeat center center;
   background-size: cover;
-  width: auto;
-  height: auto;
   padding: 100px;
 }
 
 .top-text {
   display: grid;
-  text-wrap: wrap;
-  text-align: left;
   max-width: 500px;
-  padding-right: 60px;
 }
 
 .top-text h1 {
-  font-family: Inter;
-  font-size: 67px;
-  line-height: 72px;
   font-weight: 800;
-  text-align: left;
   margin: 0;
-  padding: 0;
 }
 
 .top-text p {
@@ -145,7 +127,7 @@ nav ul li a {
 
 .buttonsCostandExp {
   display: flex;
-  gap: 50px;
+  gap: 25px;
   margin-top: 20px;
 }
 
@@ -157,8 +139,6 @@ nav ul li a {
   gap: 10px;
   padding: 10px 20px;
   border-radius: 30px;
-  cursor: pointer;
-  font-family: Inter;
   font-size: 14px;
   font-weight: 700;
   color: white;
@@ -186,7 +166,6 @@ nav ul li a {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
   background-color: rgb(255, 255, 255);
   padding: 60px 0;
 }
@@ -194,7 +173,6 @@ nav ul li a {
 .service {
   text-align: center;
   margin: 20px 30px;
-  cursor: pointer;
 }
 
 .service img {
@@ -211,10 +189,6 @@ nav ul li a {
 
 @media (max-width: 1250px) and (min-width: 550px) {
   nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 0;
     margin: 5px 40px;
   }
 
@@ -222,10 +196,6 @@ nav ul li a {
   .support-icon,
   .cart-icon {
     display: none;
-  }
-
-  .top {
-    padding: 200px 0 30px 40px;
   }
 
   .search input {
@@ -236,52 +206,16 @@ nav ul li a {
     display: flex;
     gap: 30px;
   }
-
-  .top-text h1 {
-    font-size: 50px;
-    line-height: 50px;
-    width: 70%;
-  }
-
-  .buttonsCostandExp {
-    flex-direction: row;
-    align-items: center;
-    gap: 20px;
-    margin-top: 15px;
-  }
-
-  .service {
-    margin: 15px 0;
-  }
-
-  .service img {
-    width: 72px;
-    height: 72px;
-    margin: 0;
-    padding: 0 15px;
-  }
-
-  .service p {
-    margin-top: 10px;
-  }
 }
 
 @media (max-width: 768px) and (min-width: 200px) {
   .services {
-    text-align: center;
     margin: 0 100px;
   }
 }
 
-@media (max-width: 580px) and (min-width: 200px) {
-  body {
-    width: fit-content;
-  }
-
+@media (max-width: 550px) and (min-width: 200px) {
   nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     gap: 15px;
     margin: 5px 15px;
   }
@@ -298,53 +232,13 @@ nav ul li a {
   .search input {
     width: 120px;
   }
-
-  .top {
-    padding: 200px 0 30px 30px;
-  }
-
-  .top-text h1 {
-    width: 100%;
-    font-size: 50px;
-    line-height: 50px;
-  }
-
-  .cta-button,
-  .experience-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
-    padding: 10px;
-    border-radius: 30px;
-    cursor: pointer;
-    font-family: Inter;
-    font-size: 12px;
-    font-weight: 700;
-    color: white;
-  }
-
-  .cta-button {
-    padding: 13px;
-  }
-
-  .service {
-    margin: 15px 0;
-  }
-
-  .service img {
-    width: 70px;
-    height: 70px;
-    margin: 40px 40px 0 0;
-    padding: 0;
-  }
-
-  .service p {
-    margin: 0 22px 0 0;
-  }
 }
 
-@media (max-width: 580px) and (min-width: 570px) {
+@media (min-width: 200px) {
+  .nav-1st-part img {
+    margin-top: 5px;
+  }
+
   .top-text h1 {
     font-size: 50px;
     line-height: 50px;
@@ -352,20 +246,22 @@ nav ul li a {
   }
 }
 
-@media (min-width: 200px) {
-  .nav-1st-part img {
-    margin-top: 7px;
-  }
-}
-
-@media (max-width: 580px) and (min-width: 200px) {
-  .services {
-    text-align: center;
-    margin: 0 70px;
+@media (max-width: 1250px) {
+  nav {
+    justify-content: space-between;
   }
 
-  .buttonsCostandExp {
-    gap: 20px;
+  .top {
+    padding: 200px 15px 30px 30px;
+  }
+
+  .service {
+    margin: 20px 0;
+  }
+
+  .service img {
+    margin: 0;
+    padding: 0 15px;
   }
 }
 
