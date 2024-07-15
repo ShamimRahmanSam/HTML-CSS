@@ -203,14 +203,7 @@ nav ul li a {
   }
 
   .nav-2nd-part {
-    display: flex;
     gap: 30px;
-  }
-}
-
-@media (max-width: 768px) and (min-width: 200px) {
-  .services {
-    margin: 0 100px;
   }
 }
 
@@ -232,17 +225,12 @@ nav ul li a {
   .search input {
     width: 120px;
   }
-}
-
-@media (min-width: 200px) {
-  .nav-1st-part img {
-    margin-top: 5px;
+  .services {
+    margin: 0 20px;
   }
 
-  .top-text h1 {
-    font-size: 50px;
-    line-height: 50px;
-    width: 70%;
+  .buttonsCostandExp {
+    gap: 15px;
   }
 }
 
@@ -252,7 +240,7 @@ nav ul li a {
   }
 
   .top {
-    padding: 200px 15px 30px 30px;
+    padding: 200px 15px 30px 20px;
   }
 
   .service {
@@ -272,5 +260,17 @@ nav ul li a {
 
   .nav-1st-part img {
     margin-right: 45px;
+  }
+}
+
+@media (min-width: 200px) {
+  .nav-1st-part img {
+    margin-top: 5px;
+  }
+
+  .top-text h1 {
+    font-size: 50px;
+    line-height: 50px;
+    width: 100%;
   }
 }
