@@ -41,7 +41,7 @@ nav ul li a {
   font-size: 15px;
 }
 
-.nav-2nd-part {
+.nav-right {
   gap: 40px;
 }
 
@@ -56,6 +56,7 @@ nav ul li a {
   padding: 10px 0px 10px 40px;
   font-size: 16px;
   width: 200px;
+  color: white;
 }
 
 .search input[type="text"]::placeholder {
@@ -69,28 +70,16 @@ nav ul li a {
   transform: translateY(-50%);
 }
 
-.nav-1st-part,
-.nav-2nd-part,
-.search,
-.supportCartPeople,
-.support-icon,
-.cart-icon,
-.people-icon {
+.flex-align {
   display: flex;
   align-items: center;
 }
 
-.supportCartPeople {
+.support-Cart-People {
   gap: 16px;
 }
 
-.burger,
-.support-icon,
-.cart-icon,
-.people-icon,
-.cta-button,
-.experience-button,
-.service {
+.pointer {
   cursor: pointer;
 }
 
@@ -98,7 +87,7 @@ nav ul li a {
   margin-left: 10px;
 }
 
-.top {
+.hero {
   color: white;
   background: url("/TASK 04 ResponsiveDesign from Figma/assets/Satellite.png")
     no-repeat center center;
@@ -106,17 +95,17 @@ nav ul li a {
   padding: 100px;
 }
 
-.top-text {
+.hero-text {
   display: grid;
   max-width: 500px;
 }
 
-.top-text h1 {
+.hero-text h1 {
   font-weight: 800;
   margin: 0;
 }
 
-.top-text p {
+.hero-text p {
   font-size: 15px;
   font-weight: 500;
   line-height: 20px;
@@ -125,13 +114,23 @@ nav ul li a {
   padding-top: 10px;
 }
 
-.buttonsCostandExp {
+.buttons-Cost-and-Experience {
   display: flex;
   gap: 25px;
   margin-top: 20px;
 }
 
-.cta-button,
+.order-button {
+  background-color: #2143db;
+  border: none;
+}
+
+.experience-button {
+  background-color: transparent;
+  border: 0.5px solid #9e6c6cbf;
+}
+
+.order-button,
 .experience-button {
   display: flex;
   align-items: center;
@@ -144,17 +143,7 @@ nav ul li a {
   color: white;
 }
 
-.cta-button {
-  background-color: #2143db;
-  border: none;
-}
-
-.experience-button {
-  background-color: transparent;
-  border: 0.5px solid #9e6c6cbf;
-}
-
-.cta-button:hover,
+.order-button:hover,
 .experience-button:hover {
   background-color: transparent;
   color: #f80909;
@@ -202,7 +191,7 @@ nav ul li a {
     width: 120px;
   }
 
-  .nav-2nd-part {
+  .nav-right {
     gap: 30px;
   }
 }
@@ -218,15 +207,16 @@ nav ul li a {
   .cart-icon {
     display: none;
   }
-  .nav-2nd-part {
+  .nav-right {
     gap: 16px;
   }
 
   .search input {
     width: 120px;
   }
+
   .services {
-    margin: 0 20px;
+    margin: 0 2left;
   }
 
   .buttonsCostandExp {
@@ -239,8 +229,8 @@ nav ul li a {
     justify-content: space-between;
   }
 
-  .top {
-    padding: 200px 15px 30px 20px;
+  .hero {
+    padding: 200px 10px 20px 15px;
   }
 
   .service {
@@ -258,17 +248,17 @@ nav ul li a {
     display: none;
   }
 
-  .nav-1st-part img {
+  .nav-left img {
     margin-right: 45px;
   }
 }
 
 @media (min-width: 200px) {
-  .nav-1st-part img {
+  .nav-left img {
     margin-top: 5px;
   }
 
-  .top-text h1 {
+  .hero-text h1 {
     font-size: 50px;
     line-height: 50px;
     width: 100%;
